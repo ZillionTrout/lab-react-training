@@ -1,5 +1,7 @@
 .App {
   text-align:start;
+  flex-direction: column;
+
 }
 
 .App-header {
