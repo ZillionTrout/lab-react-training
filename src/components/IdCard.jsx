@@ -1,21 +1,19 @@
 import React from 'react';
 
-const IdCard = (user) => {
-const { user: { lastName, firstName, gender, height, birth, picture } } = user;
+const IdCard = (props) => {
+const { user: { lastName, firstName, gender, height, picture } } = props;
 
 return (
-    <section className="user-section">
-        <div className="photo-div">
-            <img src={picture} className="user-picture" alt="{firstName}"/>
+    <div className="card">
+        <div className="card-info">
+            <img src={picture} alt=""/>
+            <p className="info">First name:</p><p>{lastName}</p>
+            <p className="info">Last name: </p><p>{firstName}</p>
+            <p className="info">Gender: </p><p>{gender}</p>
+            <p className="info">Height: </p><p>{height}m</p>
         </div>
-        <div className="info-user-div">
-            <p> <span>Last name: </span> {lastName}</p>
-            <p><span>First name: </span> {firstName}</p>
-            <p><span>Gender: </span> {gender}</p>
-            <p><span>Height: </span> {height}</p>
-            <p><span>Birth: </span> {birth}</p>
-        </div>
-    </section>
-)};
+    </div>
+    )
+}
 
 export default IdCard;
