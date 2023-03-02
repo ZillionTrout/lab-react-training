@@ -17,6 +17,8 @@ section.App {
   justify-content:flex-start
 }
 
+/*---- CARD ITE 1 ---- */
+
 div.card-info {
   background-color: rgb(207, 226, 217);
   border-radius: 40px;
@@ -41,6 +43,20 @@ p.info {
   font-weight: 700;
 }
 
+/*---- GREETING ITE 2 ---- */
+
+div.greet {
+  background-color: rgb(133, 133, 133);
+  border-radius: 30px;
+  padding: 0.5rem;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*---- RANDOM NUMBER ITE 3 ---- */
+
 div p.random-number {
   display: flex;
   flex-direction: column;
@@ -48,6 +64,8 @@ div p.random-number {
   font-weight: 500;
   color: blue;
 }
+
+/*---- COLOR BOX ITE 4 ---- */
 
 .colorB {
   display: flex;
@@ -66,6 +84,8 @@ p.color {
   font-weight: 700;
   margin: 2rem;
 }
+
+/*---- CREDIT CARD ITE 5 ---- */
 
 div.credit-card {
   display: flex;
@@ -94,4 +114,38 @@ div.number {
 div.expires{
   display: flex;
   gap: 10px;
+}
+
+/*---- RATING ITE 6 ---- */
+
+div.rating {
+  border: 1px solid rgb(37, 37, 37);
+  border-radius: 20px;
+  margin: 1rem;
+  padding: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*---- DRIVER CARD ITE 7 ---- */
+
+div.drivercard {
+  background-color: rgb(17, 75, 236);
+  width: 130%;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  margin: 10px;
+}
+
+div.image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  object-fit: cover;
 }
